@@ -49,7 +49,8 @@ public class CraftingGlobalListener implements NativeKeyListener, NativeMouseLis
         }
 
         // After potential errors have been considered, it is time to update
-        updateFrame.display(crafts.get(currItem_i).getName() + " x" + amounts.get(currItem_i));
+        updateFrame.display(crafts.get(currItem_i).getName() + " x" + amounts.get(currItem_i)
+            + "\nEn attente de F8");
     }
 
     // Key Listener

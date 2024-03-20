@@ -50,7 +50,8 @@ public class ItemsBuyGlobalListener implements NativeKeyListener, NativeMouseLis
 
         // After potential errors have been considered, it is time to update
         copyToClipboard(ingredients.get(currItem_i).getItem().getName());
-        updateFrame.display(ingredients.get(currItem_i).getItem().getName() + " x" + ingredients.get(currItem_i).getQuantity());
+        updateFrame.display(ingredients.get(currItem_i).getItem().getName() + " x" + ingredients.get(currItem_i).getQuantity()
+            + "\nEn attente de F8");
     }
 
     private static void copyToClipboard(String content) {

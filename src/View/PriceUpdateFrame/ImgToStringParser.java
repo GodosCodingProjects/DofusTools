@@ -10,7 +10,7 @@ import java.io.File;
 import java.util.ArrayList;
 
 public class ImgToStringParser {
-    private static final String DATA_PATH = "C:/Users/God/Documents/IDEA code/APIs/Tess4J/tessdata";
+    private static final String DATA_PATH = "C:/Users/God/Documents/IDEA code/DofusTools/Libs/Tess4J/tessdata";
 
     private static final Color BG_COLOR = Color.WHITE;
     private static final Color TXT_COLOR = Color.BLACK;

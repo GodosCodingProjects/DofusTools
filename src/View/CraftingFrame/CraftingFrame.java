@@ -32,6 +32,7 @@ public class CraftingFrame extends JFrame implements Runnable {
         this.amounts = amounts;
         this.callingFrame = callingFrame;
         this.callingFrame.setState(Frame.ICONIFIED);
+        this.callingPanel = callingPanel;
 
         init();
 
@@ -58,7 +59,7 @@ public class CraftingFrame extends JFrame implements Runnable {
     private void makeIngredientList() {
         for(int i = 0; i < crafts.size(); ++i) {
             for(int j = 0; j < crafts.get(i).size(); ++j) {
-                for(Ingredient ingredient : crafts.get(i).get(j).getIngredients()) {
+                for(Ingredient ingredient : crafts.get(i).get(j).getCraftIngredients()) {
                     Ingredient completeIngredient = new Ingredient(ingredient.getItem(), ingredient.getQuantity() * amounts.get(i).get(j));
                     Const.addIngredientToArray(completeIngredient, ingredients.get(completeIngredient.getItem().getType().ordinal()));
                 }
